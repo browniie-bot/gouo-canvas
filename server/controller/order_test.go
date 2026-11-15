@@ -20,8 +20,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/require"
-	"github.com/stripe/stripe-go/v80"
-	"github.com/stripe/stripe-go/v80/webhook"
+	"github.com/stripe/stripe-go/v87"
+	"github.com/stripe/stripe-go/v87/webhook"
 	"go.uber.org/zap"
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"

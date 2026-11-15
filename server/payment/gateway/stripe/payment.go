@@ -14,10 +14,10 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/shopspring/decimal"
-	"github.com/stripe/stripe-go/v80"
-	"github.com/stripe/stripe-go/v80/client"
-	"github.com/stripe/stripe-go/v80/webhook"
-	"github.com/stripe/stripe-go/v80/webhookendpoint"
+	"github.com/stripe/stripe-go/v87"
+	"github.com/stripe/stripe-go/v87/client"
+	"github.com/stripe/stripe-go/v87/webhook"
+	"github.com/stripe/stripe-go/v87/webhookendpoint"
 )
 
 // Stripe 结构体实现支付接口
@@ -126,7 +126,7 @@ func (e *Stripe) CreatedPay(notifyURL string, gatewayConfig *model.Payment) erro
 				stripe.String(eventName),
 				stripe.String(asyncEventName),
 			},
-			APIVersion: stripe.String("2024-09-30.acacia"),
+			APIVersion: stripe.String(stripe.APIVersion),
 		}
 		newWebhook, err := webhookendpoint.New(createParams)
 		if err != nil {

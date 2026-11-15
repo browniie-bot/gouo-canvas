@@ -41,7 +41,7 @@ require (
 	github.com/spf13/viper v1.20.1
 	github.com/sqids/sqids-go v0.4.1
 	github.com/stretchr/testify v1.10.0
-	github.com/stripe/stripe-go/v80 v80.2.1
+	github.com/stripe/stripe-go/v87 v87.1.0
 	github.com/vmihailenco/msgpack/v5 v5.4.1
 	github.com/wechatpay-apiv3/wechatpay-go v0.2.20
 	github.com/wneessen/go-mail v0.6.2
